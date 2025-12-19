@@ -173,7 +173,7 @@ function App() {
       <section className="py-10 md:py-20 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="font-heading font-extrabold text-3xl md:text-4xl mb-4 text-brand-dark uppercase">
+            <h2 className="font-heading font-extrabold text-3xl md:text-4xl mb-4 text-brand-teal uppercase">
               ES ASÍ DE SENCILLO:
             </h2>
           </div>
@@ -185,7 +185,7 @@ function App() {
                 <ChevronRight className="w-8 h-8" />
               </div>
               <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
-                <span className="font-bold">Encuentra o Registra tu Negocio:</span> Busca tu local en nuestra base de datos o créalo desde cero.
+                <span className="font-bold">Busca y Reclama tu Ficha:</span> Es muy probable que tu negocio ya esté en Guía Margarita. Búscalo y reclámalo para mantener tu antigüedad. Si no aparece, entonces créalo desde cero.
               </p>
             </div>
 
@@ -195,7 +195,7 @@ function App() {
                 <ChevronRight className="w-8 h-8" />
               </div>
               <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
-                <span className="font-bold">Completa tu Perfil:</span> Añade fotos, horario, WhatsApp y las ofertas que te hacen único.
+                <span className="font-bold">Destaca tu Propuesta:</span> Sube tus mejores fotos, publica tu menú o catálogo, actualiza horarios y añade un botón directo a WhatsApp para cerrar ventas.
               </p>
             </div>
 
@@ -205,7 +205,7 @@ function App() {
                 <ChevronRight className="w-8 h-8" />
               </div>
               <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
-                <span className="font-bold">Empieza a Recibir Clientes:</span> Aparece en los resultados de búsqueda y deja que nuestra audiencia te descubra.
+                <span className="font-bold">Conecta con Turistas:</span> Tu negocio aparecerá en las búsquedas exactas de miles de visitantes listos para comprar y disfrutar en la isla.
               </p>
             </div>
           </div>
