@@ -28,7 +28,7 @@ function App() {
                 initial={{ y: -50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                className="font-heading font-black text-[5rem] md:text-[9rem] lg:text-[12rem] text-white drop-shadow-xl tracking-tighter"
+                className="font-heading font-black text-[18vw] leading-[0.85] text-white drop-shadow-xl tracking-tighter"
               >
                 ISLA DE
               </motion.h2>
@@ -36,7 +36,7 @@ function App() {
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="font-heading font-black text-[5rem] md:text-[9rem] lg:text-[13rem] text-[#FF6B00] drop-shadow-xl tracking-tighter -mt-2 md:-mt-6"
+                className="font-heading font-black text-[15.5vw] leading-[0.85] text-[#FF6B00] drop-shadow-xl tracking-tighter -mt-2 md:-mt-4"
               >
                 MARGARITA
               </motion.h2>
