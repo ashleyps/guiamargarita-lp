@@ -98,9 +98,12 @@ function App() {
               Si no estás, no existes para ellos.
             </p>
 
-            <button className="bg-brand-orange text-white hover:bg-white hover:text-brand-orange text-lg md:text-xl font-bold py-3 px-8 rounded-full shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-2 mx-auto w-full md:w-auto">
+            <a
+              href="https://guiamargarita.com/publicar-anuncio/"
+              className="bg-brand-orange text-white hover:bg-white hover:text-brand-orange text-lg md:text-xl font-bold py-3 px-8 rounded-full shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-2 mx-auto w-full md:w-auto text-decoration-none"
+            >
               <span>REGISTRAR MI NEGOCIO GRATIS</span>
-            </button>
+            </a>
             <p className="mt-3 text-xs md:text-sm text-brand-teal opacity-80">
               Registro básico 100% gratuito.
             </p>
@@ -205,9 +208,88 @@ function App() {
         </div>
       </section>
 
-      {/* Footer Simple */}
-      <footer className="bg-[#001018] text-gray-500 py-8 text-center text-sm border-t border-gray-900">
-        <p>© {new Date().getFullYear()} Guía Margarita. Todos los derechos reservados.</p>
+      {/* Final CTA Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 text-center">
+
+          {/* Laptop/Phone Image */}
+          <div className="w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl mb-12">
+            <img
+              src="/telefono-playa.webp"
+              alt="Gestión desde el móvil"
+              className="w-full h-full object-cover aspect-square md:aspect-[16/9]"
+            />
+          </div>
+
+          {/* CTA Button */}
+          <div className="max-w-2xl mx-auto">
+            <a
+              href="https://guiamargarita.com/publicar-anuncio/"
+              className="bg-brand-orange text-white hover:bg-brand-dark text-xl md:text-2xl font-bold py-4 px-10 rounded-full shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-3 mx-auto w-full md:w-auto mb-6 text-decoration-none"
+            >
+              <span>REGISTRAR MI NEGOCIO GRATIS</span>
+            </a>
+            <p className="font-sans text-gray-600 font-medium text-lg">
+              Toma menos de 5 minutos y el registro básico es 100% gratuito.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-white pt-16 pb-8 border-t border-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
+
+            {/* Column 1: Brand */}
+            <div className="md:col-span-1">
+              <h3 className="font-heading font-black text-2xl text-brand-teal mb-4 flex items-center gap-1">
+                Guía<span className="text-brand-orange">Margarita</span>
+              </h3>
+              <p className="text-gray-500 text-sm leading-relaxed mb-6">
+                La plataforma definitva para conectar negocios locales con turistas y residentes en la Isla de Margarita.
+              </p>
+            </div>
+
+            {/* Column 2: Navigation */}
+            <div>
+              <h4 className="font-bold text-gray-900 mb-6 uppercase text-sm tracking-wider">Navegación</h4>
+              <ul className="space-y-3 text-sm text-gray-600">
+                <li><a href="#" className="hover:text-brand-orange transition-colors">Inicio</a></li>
+                <li><a href="#" className="hover:text-brand-orange transition-colors">Beneficios</a></li>
+                <li><a href="#" className="hover:text-brand-orange transition-colors">Cómo Funciona</a></li>
+                <li><a href="#" className="hover:text-brand-orange transition-colors">Registro</a></li>
+              </ul>
+            </div>
+
+            {/* Column 3: Legal */}
+            <div>
+              <h4 className="font-bold text-gray-900 mb-6 uppercase text-sm tracking-wider">Legal</h4>
+              <ul className="space-y-3 text-sm text-gray-600">
+                <li><a href="https://guiamargarita.com/terminos-y-condiciones/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange transition-colors">Términos y Condiciones</a></li>
+                <li><a href="https://guiamargarita.com/politica-de-privacidad/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange transition-colors">Política de Privacidad</a></li>
+              </ul>
+            </div>
+
+            {/* Column 4: Contact/Social */}
+            <div>
+              <h4 className="font-bold text-gray-900 mb-6 uppercase text-sm tracking-wider">Contáctanos</h4>
+              <p className="text-gray-600 text-sm mb-4">
+                ¿Tienes dudas? Escríbenos.
+              </p>
+              <div className="flex gap-4">
+                {/* Social Placeholders */}
+              </div>
+            </div>
+
+          </div>
+
+          <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-400 text-xs">
+              &copy; {new Date().getFullYear()} Guía Margarita. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
       </footer>
     </div>
   );
