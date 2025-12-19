@@ -1,4 +1,7 @@
-import { Target, Trophy, User, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
+import { ConectaTuristasIcon } from './components/icons/ConectaTuristasIcon';
+import { DestacaCompetenciaIcon } from './components/icons/DestacaCompetenciaIcon';
+import { ClientePotencialIcon } from './components/icons/ClientePotencialIcon';
 import { motion } from 'framer-motion';
 
 function App() {
@@ -130,8 +133,8 @@ function App() {
             {/* Benefit 1 */}
             <div className="bg-white p-8 rounded-3xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_50px_-10px_rgba(40,175,176,0.3)] transition-all border border-gray-100 hover:border-brand-teal/30 group text-center hover:-translate-y-1">
               <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 bg-gradient-to-br from-orange-100 to-orange-50 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300 shadow-inner">
-                  <Target className="w-10 h-10" strokeWidth={2} />
+                <div className="w-24 h-24 bg-gradient-to-br from-orange-100 to-orange-50 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300 shadow-inner">
+                  <ClientePotencialIcon className="w-14 h-14" />
                 </div>
               </div>
               <h3 className="font-heading font-extrabold text-xl md:text-2xl mb-4 text-brand-dark group-hover:text-brand-teal transition-colors uppercase leading-tight">
@@ -145,8 +148,8 @@ function App() {
             {/* Benefit 2 */}
             <div className="bg-white p-8 rounded-3xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_50px_-10px_rgba(40,175,176,0.3)] transition-all border border-gray-100 hover:border-brand-teal/30 group text-center hover:-translate-y-1">
               <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 bg-gradient-to-br from-orange-100 to-orange-50 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300 shadow-inner">
-                  <Trophy className="w-10 h-10" strokeWidth={2} />
+                <div className="w-24 h-24 bg-gradient-to-br from-orange-100 to-orange-50 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300 shadow-inner">
+                  <DestacaCompetenciaIcon className="w-14 h-14" />
                 </div>
               </div>
               <h3 className="font-heading font-extrabold text-xl md:text-2xl mb-4 text-brand-dark group-hover:text-brand-teal transition-colors uppercase leading-tight">
@@ -160,8 +163,8 @@ function App() {
             {/* Benefit 3 */}
             <div className="bg-white p-8 rounded-3xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_50px_-10px_rgba(40,175,176,0.3)] transition-all border border-gray-100 hover:border-brand-teal/30 group text-center hover:-translate-y-1">
               <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 bg-gradient-to-br from-orange-100 to-orange-50 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300 shadow-inner">
-                  <User className="w-10 h-10" strokeWidth={2} />
+                <div className="w-24 h-24 bg-gradient-to-br from-orange-100 to-orange-50 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300 shadow-inner">
+                  <ConectaTuristasIcon className="w-14 h-14" />
                 </div>
               </div>
               <h3 className="font-heading font-extrabold text-xl md:text-2xl mb-4 text-brand-dark group-hover:text-brand-teal transition-colors uppercase leading-tight">
