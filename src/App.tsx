@@ -57,7 +57,7 @@ function App() {
               <motion.img
                 src="/modelo.webp"
                 alt="Turista feliz"
-                className="absolute bottom-0 h-[85%] md:h-[90%] w-auto object-contain drop-shadow-2xl z-10 translate-y-0"
+                className="absolute bottom-0 h-[85%] md:h-[90%] w-auto object-contain drop-shadow-2xl z-10 -translate-y-[10px]"
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
@@ -236,28 +236,29 @@ function App() {
       </section>
 
       {/* Footer Simple */}
-      <footer className="bg-white pt-12 pb-8 border-t border-gray-100 flex flex-col items-center justify-center">
+      <footer className="bg-gray-50 pt-12 pb-8 border-t border-gray-100 flex flex-col items-center justify-center">
         <div className="container mx-auto px-4 text-center">
 
           {/* Logo */}
           <img
             src="/guiamargarita-logo.svg"
             alt="Guía Margarita"
-            className="h-12 md:h-16 mx-auto mb-8"
+            className="h-10 md:h-12 mx-auto mb-6"
           />
 
           {/* Legal Links */}
-          <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 mb-8 text-sm font-medium text-gray-500">
+          <div className="flex flex-row justify-center items-center gap-3 mb-2 text-sm font-medium text-gray-500">
             <a href="https://guiamargarita.com/terminos-y-condiciones/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange transition-colors">
               Términos y Condiciones
             </a>
+            <span className="text-gray-300">|</span>
             <a href="https://guiamargarita.com/politica-de-privacidad/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange transition-colors">
               Política de Privacidad
             </a>
           </div>
 
           {/* Copyright */}
-          <p className="text-gray-400 text-xs">
+          <p className="text-gray-400 text-xs text-opacity-80">
             &copy; {new Date().getFullYear()} Guía Margarita. Todos los derechos reservados.
           </p>
         </div>
