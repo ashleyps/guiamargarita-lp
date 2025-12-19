@@ -46,14 +46,16 @@ function App() {
             <div className="absolute top-0 left-0 w-full h-full flex justify-center pointer-events-none z-10">
 
               {/* Heart Left - Aligned with "ISLA DE" Text */}
+              {/* Reduced Mobile Size: w-16 (from w-24) ~25-30% reduction */}
               <motion.img
                 src="/corazon-izquierdo.webp"
-                className="w-24 md:w-28 lg:w-36 absolute left-2 md:left-[15%] top-[15%] md:top-[22%] drop-shadow-2xl z-20"
+                className="w-16 md:w-28 lg:w-36 absolute left-2 md:left-[15%] top-[15%] md:top-[22%] drop-shadow-2xl z-20"
                 animate={{ y: [0, -15, 0] }}
                 transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
               />
 
               {/* Model - Centered Bottom */}
+              {/* Lifted -10px */}
               <motion.img
                 src="/modelo.webp"
                 alt="Turista feliz"
@@ -64,9 +66,10 @@ function App() {
               />
 
               {/* Heart Right - Aligned with "ISLA DE" Text */}
+              {/* Reduced Mobile Size: w-16 */}
               <motion.img
                 src="/corazon-derecho.webp"
-                className="w-24 md:w-28 lg:w-36 absolute right-2 md:right-[15%] top-[15%] md:top-[22%] drop-shadow-2xl z-20"
+                className="w-16 md:w-28 lg:w-36 absolute right-2 md:right-[15%] top-[15%] md:top-[22%] drop-shadow-2xl z-20"
                 animate={{ y: [0, -20, 0] }}
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 0.5 }}
               />
@@ -87,7 +90,8 @@ function App() {
             transition={{ type: "spring", stiffness: 50, damping: 20, delay: 0.2 }}
             className="bg-brand-tealdark text-white rounded-t-[50px] md:rounded-t-[80px] rounded-b-[15px] p-6 pt-8 md:p-8 md:pt-10 max-w-3xl mx-auto text-center shadow-xl relative overflow-hidden pointer-events-auto"
           >
-            <h1 className="font-heading font-extrabold text-2xl md:text-[40px] lg:text-[45px] mb-3 md:mb-5 drop-shadow-sm leading-tight text-white">
+            {/* H1 Mobile: Reduced size (text-xl approx 20px) and tighter leading (leading-none) */}
+            <h1 className="font-heading font-extrabold text-xl md:text-[40px] lg:text-[45px] mb-3 md:mb-5 drop-shadow-sm leading-none md:leading-tight text-white">
               Tus Próximos Clientes <br />
               Te Están Buscando Aquí.
             </h1>
@@ -112,7 +116,8 @@ function App() {
 
 
       {/* Benefits Section */}
-      <section className="py-20 bg-white relative z-10">
+      {/* Reduced Spacing: py-10 for mobile */}
+      <section className="py-10 md:py-20 bg-white relative z-10">
         <div className="w-full md:w-[80%] mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             {/* Benefit 1 */}
@@ -164,9 +169,10 @@ function App() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-white relative overflow-hidden">
+      {/* Reduced Spacing: py-10 for mobile */}
+      <section className="py-10 md:py-20 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <h2 className="font-heading font-extrabold text-3xl md:text-4xl mb-4 text-brand-dark uppercase">
               ES ASÍ DE SENCILLO:
             </h2>
@@ -207,11 +213,12 @@ function App() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 bg-white">
+      {/* Reduced Spacing: py-10 for mobile */}
+      <section className="py-10 md:py-20 bg-white">
         <div className="container mx-auto px-4 text-center">
 
           {/* Laptop/Phone Image */}
-          <div className="w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl mb-12">
+          <div className="w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl mb-8 md:mb-12">
             <img
               src="/telefono-playa.webp"
               alt="Gestión desde el móvil"
@@ -235,7 +242,7 @@ function App() {
       </section>
 
       {/* Footer Simple */}
-      <footer className="bg-gray-50 pt-12 pb-8 border-t border-gray-100 flex flex-col items-center justify-center">
+      <footer className="bg-gray-50 pt-10 pb-8 border-t border-gray-100 flex flex-col items-center justify-center">
         <div className="container mx-auto px-4 text-center">
 
           {/* Logo */}
