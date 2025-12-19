@@ -1,5 +1,4 @@
-import React from 'react';
-import { MousePointerClick, TrendingUp, Users, Search, Edit3, Rocket, CheckCircle2, Target, Trophy, MapPinned, ChevronRight } from 'lucide-react';
+import { Target, Trophy, MapPinned, ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 function App() {
