@@ -3,10 +3,9 @@ import { motion } from 'framer-motion';
 
 function App() {
   return (
-    <div className="font-sans text-brand-dark bg-white overflow-x-hidden w-full">
-      {/* NO NAVBAR - Landing Page Mode */}
+    <div className="font-sans text-gray-900 bg-white">
 
-      {/* Hero Section - Diseño Exacto Maqueta */}
+      {/* Hero Section */}
       <header className="relative pt-0 pb-0 flex flex-col items-center justify-start bg-white">
 
         {/* 1. Imagen de Fondo (Playa) + Modelo */}
@@ -236,59 +235,31 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-white pt-16 pb-8 border-t border-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 mb-12">
+      {/* Footer Simple */}
+      <footer className="bg-white pt-12 pb-8 border-t border-gray-100 flex flex-col items-center justify-center">
+        <div className="container mx-auto px-4 text-center">
 
-            {/* Column 1: Brand */}
-            <div className="md:col-span-1">
-              <h3 className="font-heading font-black text-2xl text-brand-teal mb-4 flex items-center gap-1">
-                Guía<span className="text-brand-orange">Margarita</span>
-              </h3>
-              <p className="text-gray-500 text-sm leading-relaxed mb-6">
-                La plataforma definitva para conectar negocios locales con turistas y residentes en la Isla de Margarita.
-              </p>
-            </div>
+          {/* Logo */}
+          <img
+            src="/guiamargarita-logo.svg"
+            alt="Guía Margarita"
+            className="h-12 md:h-16 mx-auto mb-8"
+          />
 
-            {/* Column 2: Navigation */}
-            <div>
-              <h4 className="font-bold text-gray-900 mb-6 uppercase text-sm tracking-wider">Navegación</h4>
-              <ul className="space-y-3 text-sm text-gray-600">
-                <li><a href="#" className="hover:text-brand-orange transition-colors">Inicio</a></li>
-                <li><a href="#" className="hover:text-brand-orange transition-colors">Beneficios</a></li>
-                <li><a href="#" className="hover:text-brand-orange transition-colors">Cómo Funciona</a></li>
-                <li><a href="#" className="hover:text-brand-orange transition-colors">Registro</a></li>
-              </ul>
-            </div>
-
-            {/* Column 3: Legal */}
-            <div>
-              <h4 className="font-bold text-gray-900 mb-6 uppercase text-sm tracking-wider">Legal</h4>
-              <ul className="space-y-3 text-sm text-gray-600">
-                <li><a href="https://guiamargarita.com/terminos-y-condiciones/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange transition-colors">Términos y Condiciones</a></li>
-                <li><a href="https://guiamargarita.com/politica-de-privacidad/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange transition-colors">Política de Privacidad</a></li>
-              </ul>
-            </div>
-
-            {/* Column 4: Contact/Social */}
-            <div>
-              <h4 className="font-bold text-gray-900 mb-6 uppercase text-sm tracking-wider">Contáctanos</h4>
-              <p className="text-gray-600 text-sm mb-4">
-                ¿Tienes dudas? Escríbenos.
-              </p>
-              <div className="flex gap-4">
-                {/* Social Placeholders */}
-              </div>
-            </div>
-
+          {/* Legal Links */}
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 mb-8 text-sm font-medium text-gray-500">
+            <a href="https://guiamargarita.com/terminos-y-condiciones/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange transition-colors">
+              Términos y Condiciones
+            </a>
+            <a href="https://guiamargarita.com/politica-de-privacidad/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange transition-colors">
+              Política de Privacidad
+            </a>
           </div>
 
-          <div className="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-xs">
-              &copy; {new Date().getFullYear()} Guía Margarita. Todos los derechos reservados.
-            </p>
-          </div>
+          {/* Copyright */}
+          <p className="text-gray-400 text-xs">
+            &copy; {new Date().getFullYear()} Guía Margarita. Todos los derechos reservados.
+          </p>
         </div>
       </footer>
     </div>
