@@ -82,31 +82,38 @@ function App() {
         </div>
 
         {/* 2. Tarjeta Azul Marca (Teal) con el Copy */}
+        {/* 2. Tarjeta Azul Marca (Teal) con el Copy */}
         <div className="relative z-30 -mt-24 md:-mt-44 translate-y-[10px] w-full px-4 mb-4 md:mb-12 pointer-events-none">
           <motion.div
             initial={{ scale: 0.9, y: 50, opacity: 0 }}
             whileInView={{ scale: 1, y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ type: "spring", stiffness: 50, damping: 20, delay: 0.2 }}
-            className="bg-brand-tealdark text-white rounded-t-[50px] md:rounded-t-[80px] rounded-b-[15px] p-6 pt-8 md:p-8 md:pt-10 max-w-3xl mx-auto text-center shadow-xl relative overflow-hidden pointer-events-auto"
+            className="bg-gradient-to-br from-[#28afb0] to-[#1e6f73] backdrop-blur-sm bg-opacity-95 text-white rounded-t-[50px] md:rounded-t-[80px] rounded-b-[15px] p-6 pt-8 md:p-8 md:pt-10 max-w-3xl mx-auto text-center shadow-2xl border border-white/10 relative overflow-hidden pointer-events-auto ring-1 ring-white/20"
           >
+            {/* Glossy Overlay effect */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white/10 to-transparent pointer-events-none"></div>
+
             {/* H1 Mobile: Reduced size (text-xl approx 20px) and tighter leading (leading-none) */}
-            <h1 className="font-heading font-extrabold text-xl md:text-[40px] lg:text-[45px] mb-3 md:mb-5 drop-shadow-sm leading-none md:leading-tight text-white">
+            <h1 className="relative font-heading font-extrabold text-xl md:text-[40px] lg:text-[45px] mb-3 md:mb-5 drop-shadow-sm leading-none md:leading-tight text-white z-10">
               Tus Próximos Clientes <br />
-              Te Están Buscando Aquí.
+              <span className="text-white drop-shadow-lg">Te Están Buscando Aquí.</span>
             </h1>
 
-            <p className="font-sans text-brand-offwhite text-sm md:text-lg font-medium leading-relaxed max-w-xl mx-auto mb-5 md:mb-6">
+            <p className="relative font-sans text-brand-offwhite text-sm md:text-lg font-medium leading-relaxed max-w-xl mx-auto mb-5 md:mb-6 z-10">
               Únete a la guía que más de <strong>2.000 visitantes</strong> usan cada mes para decidir dónde comprar, comer y disfrutar en Margarita.
             </p>
 
-            <a
+            <motion.a
               href="https://guiamargarita.com/publicar-anuncio/"
-              className="bg-brand-orange text-white hover:bg-white hover:text-brand-orange text-xl md:text-2xl font-extrabold py-4 px-8 rounded-full shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-2 mx-auto w-full md:w-auto text-decoration-none leading-none"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="relative overflow-hidden bg-gradient-to-r from-[#ff8c37] to-[#f75c03] text-white hover:to-[#ff4e00] text-xl md:text-2xl font-extrabold py-4 px-8 rounded-full shadow-[0_10px_20px_rgba(247,92,3,0.3)] transition-all flex items-center justify-center gap-2 mx-auto w-full md:w-auto text-decoration-none leading-none z-10 group"
             >
-              <span>REGISTRAR MI NEGOCIO GRATIS</span>
-            </a>
-            <p className="mt-4 text-base md:text-lg text-white font-bold opacity-90">
+              <span className="relative z-10 drop-shadow-sm">REGISTRAR MI NEGOCIO GRATIS</span>
+              <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+            </motion.a>
+            <p className="mt-4 text-base md:text-lg text-white font-bold opacity-90 relative z-10">
               Si no estás, no existes para ellos.
             </p>
           </motion.div>
@@ -121,46 +128,46 @@ function App() {
         <div className="w-full md:w-[80%] mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             {/* Benefit 1 */}
-            <div className="bg-gray-50 p-8 rounded-3xl hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-gray-100 group text-center">
+            <div className="bg-white p-8 rounded-3xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_50px_-10px_rgba(40,175,176,0.3)] transition-all border border-gray-100 hover:border-brand-teal/30 group text-center hover:-translate-y-1">
               <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 bg-gradient-to-br from-orange-100 to-orange-50 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300 shadow-inner">
                   <Target className="w-10 h-10" strokeWidth={2} />
                 </div>
               </div>
-              <h3 className="font-heading font-extrabold text-xl md:text-2xl mb-4 text-brand-teal uppercase leading-tight">
+              <h3 className="font-heading font-extrabold text-xl md:text-2xl mb-4 text-brand-dark group-hover:text-brand-teal transition-colors uppercase leading-tight">
                 Atrae Clientes,<br /> No solo Clics:
               </h3>
-              <p className="text-gray-600 leading-relaxed font-medium">
+              <p className="text-gray-500 leading-relaxed font-medium">
                 Conecta con una audiencia lista para comprar, no solo curiosos navegando.
               </p>
             </div>
 
             {/* Benefit 2 */}
-            <div className="bg-gray-50 p-8 rounded-3xl hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-gray-100 group text-center">
+            <div className="bg-white p-8 rounded-3xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_50px_-10px_rgba(40,175,176,0.3)] transition-all border border-gray-100 hover:border-brand-teal/30 group text-center hover:-translate-y-1">
               <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 bg-gradient-to-br from-orange-100 to-orange-50 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300 shadow-inner">
                   <Trophy className="w-10 h-10" strokeWidth={2} />
                 </div>
               </div>
-              <h3 className="font-heading font-extrabold text-xl md:text-2xl mb-4 text-brand-teal uppercase leading-tight">
+              <h3 className="font-heading font-extrabold text-xl md:text-2xl mb-4 text-brand-dark group-hover:text-brand-teal transition-colors uppercase leading-tight">
                 Destaca sobre tu<br /> Competencia:
               </h3>
-              <p className="text-gray-600 leading-relaxed font-medium">
+              <p className="text-gray-500 leading-relaxed font-medium">
                 Asegúrate de que te elijan a ti cuando comparen opciones en la isla.
               </p>
             </div>
 
             {/* Benefit 3 */}
-            <div className="bg-gray-50 p-8 rounded-3xl hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-gray-100 group text-center">
+            <div className="bg-white p-8 rounded-3xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_50px_-10px_rgba(40,175,176,0.3)] transition-all border border-gray-100 hover:border-brand-teal/30 group text-center hover:-translate-y-1">
               <div className="flex justify-center mb-6">
-                <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 bg-gradient-to-br from-orange-100 to-orange-50 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300 shadow-inner">
                   <User className="w-10 h-10" strokeWidth={2} />
                 </div>
               </div>
-              <h3 className="font-heading font-extrabold text-xl md:text-2xl mb-4 text-brand-teal uppercase leading-tight">
+              <h3 className="font-heading font-extrabold text-xl md:text-2xl mb-4 text-brand-dark group-hover:text-brand-teal transition-colors uppercase leading-tight">
                 Conecta con <br /> Turistas y Locales:
               </h3>
-              <p className="text-gray-600 leading-relaxed font-medium">
+              <p className="text-gray-500 leading-relaxed font-medium">
                 Captura ambos mercados con un solo perfil optimizado y visible.
               </p>
             </div>
@@ -170,7 +177,7 @@ function App() {
 
       {/* Process Section */}
       {/* Reduced Spacing: py-10 for mobile */}
-      <section className="py-10 md:py-20 bg-white relative overflow-hidden">
+      <section className="py-10 md:py-20 bg-gray-50 relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="font-heading font-extrabold text-3xl md:text-4xl mb-4 text-brand-teal uppercase">
@@ -180,32 +187,32 @@ function App() {
 
           <div className="flex flex-col gap-6 max-w-4xl mx-auto">
             {/* Step 1 */}
-            <div className="bg-gray-100 rounded-2xl p-4 md:p-8 shadow-md flex items-start md:items-center gap-3 md:gap-6 hover:shadow-lg transition-shadow">
-              <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-brand-orange rounded-full flex items-center justify-center text-white shadow-md">
-                <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
+            <div className="bg-white rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-md transition-shadow flex items-start md:items-center gap-3 md:gap-6 border border-gray-100 group">
+              <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-brand-orange/10 group-hover:bg-brand-orange rounded-full flex items-center justify-center text-brand-orange group-hover:text-white transition-all duration-300 shadow-sm">
+                <ChevronRight className="w-6 h-6 md:w-8 md:h-8" strokeWidth={3} />
               </div>
-              <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
-                <span className="font-bold">Busca y Reclama tu Ficha:</span> Es muy probable que tu negocio ya esté en Guía Margarita. Búscalo y reclámalo para mantener tu antigüedad. Si no aparece, entonces créalo desde cero.
+              <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
+                <span className="font-bold text-brand-dark">Busca y Reclama tu Ficha:</span> Es muy probable que tu negocio ya esté en Guía Margarita. Búscalo y reclámalo para mantener tu antigüedad. Si no aparece, entonces créalo desde cero.
               </p>
             </div>
 
             {/* Step 2 */}
-            <div className="bg-gray-100 rounded-2xl p-4 md:p-8 shadow-md flex items-start md:items-center gap-3 md:gap-6 hover:shadow-lg transition-shadow">
-              <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-brand-orange rounded-full flex items-center justify-center text-white shadow-md">
-                <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
+            <div className="bg-white rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-md transition-shadow flex items-start md:items-center gap-3 md:gap-6 border border-gray-100 group">
+              <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-brand-orange/10 group-hover:bg-brand-orange rounded-full flex items-center justify-center text-brand-orange group-hover:text-white transition-all duration-300 shadow-sm">
+                <ChevronRight className="w-6 h-6 md:w-8 md:h-8" strokeWidth={3} />
               </div>
-              <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
-                <span className="font-bold">Destaca tu Propuesta:</span> Sube tus mejores fotos, publica tu menú o catálogo, actualiza horarios y añade un botón directo a WhatsApp para cerrar ventas.
+              <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
+                <span className="font-bold text-brand-dark">Destaca tu Propuesta:</span> Sube tus mejores fotos, publica tu menú o catálogo, actualiza horarios y añade un botón directo a WhatsApp para cerrar ventas.
               </p>
             </div>
 
             {/* Step 3 */}
-            <div className="bg-gray-100 rounded-2xl p-4 md:p-8 shadow-md flex items-start md:items-center gap-3 md:gap-6 hover:shadow-lg transition-shadow">
-              <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-brand-orange rounded-full flex items-center justify-center text-white shadow-md">
-                <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
+            <div className="bg-white rounded-2xl p-4 md:p-8 shadow-sm hover:shadow-md transition-shadow flex items-start md:items-center gap-3 md:gap-6 border border-gray-100 group">
+              <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-brand-orange/10 group-hover:bg-brand-orange rounded-full flex items-center justify-center text-brand-orange group-hover:text-white transition-all duration-300 shadow-sm">
+                <ChevronRight className="w-6 h-6 md:w-8 md:h-8" strokeWidth={3} />
               </div>
-              <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
-                <span className="font-bold">Conecta con Turistas:</span> Tu negocio aparecerá en las búsquedas exactas de miles de visitantes listos para comprar y disfrutar en la isla.
+              <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
+                <span className="font-bold text-brand-dark">Conecta con Turistas:</span> Tu negocio aparecerá en las búsquedas exactas de miles de visitantes listos para comprar y disfrutar en la isla.
               </p>
             </div>
           </div>
@@ -218,7 +225,7 @@ function App() {
         <div className="container mx-auto px-4 text-center">
 
           {/* Laptop/Phone Image */}
-          <div className="w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl mb-8 md:mb-12">
+          <div className="w-full max-w-5xl mx-auto rounded-[3rem] overflow-hidden shadow-2xl mb-8 md:mb-12 border-4 border-white ring-1 ring-gray-100 transform hover:scale-[1.01] transition-transform duration-500">
             <img
               src="/telefono-playa.webp"
               alt="Gestión desde el móvil"
@@ -227,14 +234,17 @@ function App() {
           </div>
 
           {/* CTA Button */}
-          <div className="max-w-2xl mx-auto">
-            <a
+          <div className="max-w-3xl mx-auto">
+            <motion.a
               href="https://guiamargarita.com/publicar-anuncio/"
-              className="bg-brand-orange text-white hover:bg-brand-dark text-xl md:text-2xl font-extrabold py-4 px-10 rounded-full shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-3 mx-auto w-full md:w-auto mb-6 text-decoration-none leading-none"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="relative overflow-hidden bg-gradient-to-r from-[#ff8c37] to-[#f75c03] text-white hover:to-[#ff4e00] text-xl md:text-2xl font-extrabold py-4 px-10 rounded-full shadow-[0_15px_30px_rgba(247,92,3,0.4)] transition-all flex items-center justify-center gap-3 mx-auto w-full md:w-auto mb-6 text-decoration-none leading-none group"
             >
-              <span>REGISTRAR MI NEGOCIO GRATIS</span>
-            </a>
-            <p className="font-sans text-gray-600 font-medium text-lg">
+              <span className="relative z-10 drop-shadow-md">REGISTRAR MI NEGOCIO GRATIS</span>
+              <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+            </motion.a>
+            <p className="font-sans text-gray-500 font-medium text-lg">
               Toma menos de 5 minutos y el registro básico es 100% gratuito.
             </p>
           </div>
