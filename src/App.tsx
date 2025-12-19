@@ -263,12 +263,12 @@ function App() {
           />
 
           {/* Legal Links */}
-          <div className="flex flex-row justify-center items-center gap-3 mb-2 text-sm font-medium text-gray-500">
-            <a href="https://guiamargarita.com/terminos-y-condiciones/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange transition-colors">
+          <div className="flex flex-row justify-center items-center gap-2 md:gap-3 mb-2 text-[10px] md:text-sm font-medium text-gray-500">
+            <a href="https://guiamargarita.com/terminos-y-condiciones/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange transition-colors whitespace-nowrap">
               Términos y Condiciones
             </a>
             <span className="text-gray-300">|</span>
-            <a href="https://guiamargarita.com/politica-de-privacidad/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange transition-colors">
+            <a href="https://guiamargarita.com/politica-de-privacidad/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-orange transition-colors whitespace-nowrap">
               Política de Privacidad
             </a>
           </div>
