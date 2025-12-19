@@ -1,4 +1,4 @@
-import { Target, Trophy, MapPinned, ChevronRight } from 'lucide-react';
+import { Target, Trophy, User, ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 function App() {
@@ -82,7 +82,7 @@ function App() {
         </div>
 
         {/* 2. Tarjeta Azul Marca (Teal) con el Copy */}
-        <div className="relative z-30 -mt-24 md:-mt-44 w-full px-4 mb-4 md:mb-12 pointer-events-none">
+        <div className="relative z-30 -mt-24 md:-mt-44 translate-y-[10px] w-full px-4 mb-4 md:mb-12 pointer-events-none">
           <motion.div
             initial={{ scale: 0.9, y: 50, opacity: 0 }}
             whileInView={{ scale: 1, y: 0, opacity: 1 }}
@@ -124,7 +124,7 @@ function App() {
             <div className="bg-gray-50 p-8 rounded-3xl hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-gray-100 group text-center">
               <div className="flex justify-center mb-6">
                 <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300">
-                  <Target className="w-10 h-10" />
+                  <Target className="w-10 h-10" strokeWidth={2} />
                 </div>
               </div>
               <h3 className="font-heading font-extrabold text-xl md:text-2xl mb-4 text-brand-teal uppercase leading-tight">
@@ -139,7 +139,7 @@ function App() {
             <div className="bg-gray-50 p-8 rounded-3xl hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-gray-100 group text-center">
               <div className="flex justify-center mb-6">
                 <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300">
-                  <Trophy className="w-10 h-10" />
+                  <Trophy className="w-10 h-10" strokeWidth={2} />
                 </div>
               </div>
               <h3 className="font-heading font-extrabold text-xl md:text-2xl mb-4 text-brand-teal uppercase leading-tight">
@@ -154,7 +154,7 @@ function App() {
             <div className="bg-gray-50 p-8 rounded-3xl hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-gray-100 group text-center">
               <div className="flex justify-center mb-6">
                 <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center text-brand-orange group-hover:scale-110 transition-transform duration-300">
-                  <MapPinned className="w-10 h-10" />
+                  <User className="w-10 h-10" strokeWidth={2} />
                 </div>
               </div>
               <h3 className="font-heading font-extrabold text-xl md:text-2xl mb-4 text-brand-teal uppercase leading-tight">
@@ -180,9 +180,9 @@ function App() {
 
           <div className="flex flex-col gap-6 max-w-4xl mx-auto">
             {/* Step 1 */}
-            <div className="bg-gray-100 rounded-2xl p-6 md:p-8 shadow-md flex items-start md:items-center gap-4 md:gap-6 hover:shadow-lg transition-shadow">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-orange rounded-full flex items-center justify-center text-white shadow-md">
-                <ChevronRight className="w-8 h-8" />
+            <div className="bg-gray-100 rounded-2xl p-4 md:p-8 shadow-md flex items-start md:items-center gap-3 md:gap-6 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-brand-orange rounded-full flex items-center justify-center text-white shadow-md">
+                <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
               </div>
               <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
                 <span className="font-bold">Busca y Reclama tu Ficha:</span> Es muy probable que tu negocio ya esté en Guía Margarita. Búscalo y reclámalo para mantener tu antigüedad. Si no aparece, entonces créalo desde cero.
@@ -190,9 +190,9 @@ function App() {
             </div>
 
             {/* Step 2 */}
-            <div className="bg-gray-100 rounded-2xl p-6 md:p-8 shadow-md flex items-start md:items-center gap-4 md:gap-6 hover:shadow-lg transition-shadow">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-orange rounded-full flex items-center justify-center text-white shadow-md">
-                <ChevronRight className="w-8 h-8" />
+            <div className="bg-gray-100 rounded-2xl p-4 md:p-8 shadow-md flex items-start md:items-center gap-3 md:gap-6 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-brand-orange rounded-full flex items-center justify-center text-white shadow-md">
+                <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
               </div>
               <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
                 <span className="font-bold">Destaca tu Propuesta:</span> Sube tus mejores fotos, publica tu menú o catálogo, actualiza horarios y añade un botón directo a WhatsApp para cerrar ventas.
@@ -200,9 +200,9 @@ function App() {
             </div>
 
             {/* Step 3 */}
-            <div className="bg-gray-100 rounded-2xl p-6 md:p-8 shadow-md flex items-start md:items-center gap-4 md:gap-6 hover:shadow-lg transition-shadow">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-orange rounded-full flex items-center justify-center text-white shadow-md">
-                <ChevronRight className="w-8 h-8" />
+            <div className="bg-gray-100 rounded-2xl p-4 md:p-8 shadow-md flex items-start md:items-center gap-3 md:gap-6 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-brand-orange rounded-full flex items-center justify-center text-white shadow-md">
+                <ChevronRight className="w-6 h-6 md:w-8 md:h-8" />
               </div>
               <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
                 <span className="font-bold">Conecta con Turistas:</span> Tu negocio aparecerá en las búsquedas exactas de miles de visitantes listos para comprar y disfrutar en la isla.
