@@ -49,7 +49,7 @@ function App() {
               {/* Reduced Mobile Size: w-16 (from w-24) ~25-30% reduction */}
               <motion.img
                 src="/corazon-izquierdo.webp"
-                className="w-16 md:w-28 lg:w-36 absolute left-2 md:left-[15%] top-[15%] md:top-[22%] drop-shadow-2xl z-20"
+                className="w-16 md:w-28 lg:w-36 absolute left-8 md:left-[15%] top-[15%] md:top-[22%] drop-shadow-2xl z-20"
                 animate={{ y: [0, -15, 0] }}
                 transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
               />
@@ -69,7 +69,7 @@ function App() {
               {/* Reduced Mobile Size: w-16 */}
               <motion.img
                 src="/corazon-derecho.webp"
-                className="w-16 md:w-28 lg:w-36 absolute right-2 md:right-[15%] top-[15%] md:top-[22%] drop-shadow-2xl z-20"
+                className="w-16 md:w-28 lg:w-36 absolute right-8 md:right-[15%] top-[15%] md:top-[22%] drop-shadow-2xl z-20"
                 animate={{ y: [0, -20, 0] }}
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 0.5 }}
               />
@@ -102,7 +102,7 @@ function App() {
 
             <a
               href="https://guiamargarita.com/publicar-anuncio/"
-              className="bg-brand-orange text-white hover:bg-white hover:text-brand-orange text-lg md:text-xl font-bold py-3 px-8 rounded-full shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-2 mx-auto w-full md:w-auto text-decoration-none"
+              className="bg-brand-orange text-white hover:bg-white hover:text-brand-orange text-xl md:text-2xl font-extrabold py-4 px-8 rounded-full shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-2 mx-auto w-full md:w-auto text-decoration-none leading-none"
             >
               <span>REGISTRAR MI NEGOCIO GRATIS</span>
             </a>
@@ -230,7 +230,7 @@ function App() {
           <div className="max-w-2xl mx-auto">
             <a
               href="https://guiamargarita.com/publicar-anuncio/"
-              className="bg-brand-orange text-white hover:bg-brand-dark text-xl md:text-2xl font-bold py-4 px-10 rounded-full shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-3 mx-auto w-full md:w-auto mb-6 text-decoration-none"
+              className="bg-brand-orange text-white hover:bg-brand-dark text-xl md:text-2xl font-extrabold py-4 px-10 rounded-full shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl flex items-center justify-center gap-3 mx-auto w-full md:w-auto mb-6 text-decoration-none leading-none"
             >
               <span>REGISTRAR MI NEGOCIO GRATIS</span>
             </a>
