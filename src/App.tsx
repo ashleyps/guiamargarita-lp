@@ -49,7 +49,7 @@ function App() {
               {/* Reduced Mobile Size: w-16 (from w-24) ~25-30% reduction */}
               <motion.img
                 src="/corazon-izquierdo.webp"
-                className="w-16 md:w-28 lg:w-36 absolute left-8 md:left-[15%] top-[15%] md:top-[22%] drop-shadow-2xl z-20"
+                className="w-16 md:w-28 lg:w-36 absolute left-8 md:left-[15%] top-[33%] md:top-[22%] drop-shadow-2xl z-20"
                 animate={{ y: [0, -15, 0] }}
                 transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
               />
@@ -69,7 +69,7 @@ function App() {
               {/* Reduced Mobile Size: w-16 */}
               <motion.img
                 src="/corazon-derecho.webp"
-                className="w-16 md:w-28 lg:w-36 absolute right-8 md:right-[15%] top-[15%] md:top-[22%] drop-shadow-2xl z-20"
+                className="w-16 md:w-28 lg:w-36 absolute right-8 md:right-[15%] top-[33%] md:top-[22%] drop-shadow-2xl z-20"
                 animate={{ y: [0, -20, 0] }}
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 0.5 }}
               />
