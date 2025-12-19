@@ -93,8 +93,7 @@ function App() {
             </h1>
 
             <p className="font-sans text-brand-offwhite text-sm md:text-lg font-medium leading-relaxed max-w-xl mx-auto mb-5 md:mb-6">
-              Únete a la guía que más de <strong>2.000 visitantes</strong> usan cada mes para decidir dónde comprar, comer y disfrutar en Margarita. <br className="hidden md:block" />
-              Si no estás, no existes para ellos.
+              Únete a la guía que más de <strong>2.000 visitantes</strong> usan cada mes para decidir dónde comprar, comer y disfrutar en Margarita.
             </p>
 
             <a
@@ -103,8 +102,8 @@ function App() {
             >
               <span>REGISTRAR MI NEGOCIO GRATIS</span>
             </a>
-            <p className="mt-3 text-xs md:text-sm text-brand-teal opacity-80">
-              Registro básico 100% gratuito.
+            <p className="mt-4 text-base md:text-lg text-white font-bold opacity-90">
+              Si no estás, no existes para ellos.
             </p>
           </motion.div>
         </div>
